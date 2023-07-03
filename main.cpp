@@ -43,19 +43,19 @@ int main(int argc, char* argv[])
 
     // Create the home button with icon
     GtkWidget* homeButton = gtk_button_new();
-    GtkWidget* homeImage = gtk_image_new_from_file("res/home.png");
+    GtkWidget* homeImage = gtk_image_new_from_file("home.png");
     gtk_button_set_image(GTK_BUTTON(homeButton), homeImage);
     g_signal_connect(homeButton, "clicked", G_CALLBACK(home_button_clicked), webView);
 
     // Create the back button with icon
     GtkWidget* backButton = gtk_button_new();
-    GtkWidget* backImage = gtk_image_new_from_file("res/previous.png");
+    GtkWidget* backImage = gtk_image_new_from_file("previous.png");
     gtk_button_set_image(GTK_BUTTON(backButton), backImage);
     g_signal_connect(backButton, "clicked", G_CALLBACK(back_button_clicked), webView);
 
     // Create the forward button with icon
     GtkWidget* forwardButton = gtk_button_new();
-    GtkWidget* forwardImage = gtk_image_new_from_file("res/next.png");
+    GtkWidget* forwardImage = gtk_image_new_from_file("next.png");
     gtk_button_set_image(GTK_BUTTON(forwardButton), forwardImage);
     g_signal_connect(forwardButton, "clicked", G_CALLBACK(forward_button_clicked), webView);
 
